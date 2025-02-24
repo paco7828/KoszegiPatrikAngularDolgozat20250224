@@ -1,0 +1,4 @@
+<input type="number" [(ngModel)]="a" placeholder="A value..." id="aInput">
+<input type="number" [(ngModel)]="b" placeholder="B value..." id="bInput">
+<app-child [a]="a" [b]="b" (result)="update($event)"></app-child>
+<p>Result: {{ result }}</p>
